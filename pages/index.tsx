@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 
       </div> */}
     
-      <div className={styles.canvas} style={{backgroundColor: '#f5f5f5', width:'90%'}}>
+      <div className={styles.canvas} style={{backgroundColor: '#878787', width:'90%'}}>
        
         <div className={styles.container}>
           <h1 className={styles.titulo} style={estilos} >Auxiliar Manipuladora</h1>
