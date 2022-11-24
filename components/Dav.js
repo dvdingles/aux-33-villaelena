@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/6D BODEGAS VILLAELENA.gltf");
+  const { nodes, materials } = useGLTF("/7D BODEGAS VILLAELENA.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -47,7 +47,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto004.geometry}
         material={materials["Material.001"]}
-        position={[0.31, -0.04, 0.27]}
+        position={[0.26, -0.1, 0.21]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
@@ -104,4 +104,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/6D BODEGAS VILLAELENA.gltf");
+useGLTF.preload("/7D BODEGAS VILLAELENA.gltf");
