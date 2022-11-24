@@ -6,97 +6,97 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/4D BODEGAS VILLAELENA.gltf");
+  const { nodes, materials } = useGLTF("/6D BODEGAS VILLAELENA.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plano001.geometry}
+        geometry={nodes.Plano005.geometry}
         material={materials["Material.001"]}
-        position={[0.19, 0.1, -0.01]}
+        position={[0.18, 0.1, 0]}
         rotation={[-Math.PI, 1.25, -Math.PI]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plano002.geometry}
+        geometry={nodes.Plano006.geometry}
         material={materials["Material.001"]}
-        position={[0.15, 0.1, -0.13]}
+        position={[0.14, 0.1, -0.12]}
         rotation={[-Math.PI, 1.25, -Math.PI]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plano003.geometry}
+        geometry={nodes.Plano007.geometry}
         material={materials["Material.001"]}
-        position={[0.35, 0.04, -0.31]}
+        position={[0.34, 0.05, -0.29]}
         rotation={[-Math.PI, 1.25, -Math.PI]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Texto.geometry}
+        geometry={nodes.Texto003.geometry}
         material={materials["Material.001"]}
-        position={[0.47, -0.11, -0.12]}
+        position={[0.45, -0.1, -0.11]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Texto001.geometry}
+        geometry={nodes.Texto004.geometry}
         material={materials["Material.001"]}
-        position={[0.32, -0.05, 0.26]}
+        position={[0.31, -0.04, 0.27]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Texto002.geometry}
+        geometry={nodes.Texto005.geometry}
         material={materials["Material.001"]}
-        position={[0.4, -0.06, -0.3]}
+        position={[0.39, -0.06, -0.29]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
-      <group position={[0.01, -0.11, -0.13]} rotation={[Math.PI / 2, 0, 2.82]}>
+      <group position={[0, -0.1, -0.12]} rotation={[Math.PI / 2, 0, 2.82]}>
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["tq_ARD-geom"].geometry}
+          geometry={nodes["tq_ARD-geom002"].geometry}
           material={materials.tq_ARD_front}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["tq_ARD-geom_1"].geometry}
+          geometry={nodes["tq_ARD-geom002_1"].geometry}
           material={materials.tq_ARD_back}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["tq_ARD-geom_2"].geometry}
+          geometry={nodes["tq_ARD-geom002_2"].geometry}
           material={materials.tq_ARD_edge}
         />
       </group>
-      <group position={[-0.35, -0.11, 0.08]} rotation={[Math.PI / 2, 0, 2.82]}>
+      <group position={[-0.36, -0.1, 0.09]} rotation={[Math.PI / 2, 0, 2.82]}>
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["tq_ARD-geom001"].geometry}
+          geometry={nodes["tq_ARD-geom003"].geometry}
           material={materials["tq_ARD_front.001"]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["tq_ARD-geom001_1"].geometry}
+          geometry={nodes["tq_ARD-geom003_1"].geometry}
           material={materials["back-dil"]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["tq_ARD-geom001_2"].geometry}
+          geometry={nodes["tq_ARD-geom003_2"].geometry}
           material={materials["tq_ARD_edge.001"]}
         />
       </group>
@@ -104,4 +104,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/4D BODEGAS VILLAELENA.gltf");
+useGLTF.preload("/6D BODEGAS VILLAELENA.gltf");
