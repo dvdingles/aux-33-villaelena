@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/3D BODEGAS VILLAELENA.gltf");
+  const { nodes, materials } = useGLTF("/4D BODEGAS VILLAELENA.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -14,7 +14,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano001.geometry}
         material={materials["Material.001"]}
-        position={[0.5, 0.21, 0.23]}
+        position={[0.19, 0.1, -0.01]}
         rotation={[-Math.PI, 1.25, -Math.PI]}
       />
       <mesh
@@ -22,7 +22,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano002.geometry}
         material={materials["Material.001"]}
-        position={[0.46, 0.21, 0.11]}
+        position={[0.15, 0.1, -0.13]}
         rotation={[-Math.PI, 1.25, -Math.PI]}
       />
       <mesh
@@ -30,7 +30,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano003.geometry}
         material={materials["Material.001"]}
-        position={[0.66, 0.16, -0.07]}
+        position={[0.35, 0.04, -0.31]}
         rotation={[-Math.PI, 1.25, -Math.PI]}
       />
       <mesh
@@ -38,7 +38,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto.geometry}
         material={materials["Material.001"]}
-        position={[0.77, 0, 0.12]}
+        position={[0.47, -0.11, -0.12]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
@@ -47,7 +47,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto001.geometry}
         material={materials["Material.001"]}
-        position={[0.63, 0.07, 0.49]}
+        position={[0.32, -0.05, 0.26]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
@@ -56,11 +56,11 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto002.geometry}
         material={materials["Material.001"]}
-        position={[0.71, 0.05, -0.06]}
+        position={[0.4, -0.06, -0.3]}
         rotation={[Math.PI / 2, 0, -0.32]}
         scale={0.5}
       />
-      <group position={[0.32, 0, 0.1]} rotation={[Math.PI / 2, 0, 2.82]}>
+      <group position={[0.01, -0.11, -0.13]} rotation={[Math.PI / 2, 0, 2.82]}>
         <mesh
           castShadow
           receiveShadow
@@ -80,7 +80,7 @@ export function Dav(props) {
           material={materials.tq_ARD_edge}
         />
       </group>
-      <group position={[-0.05, 0, 0.31]} rotation={[Math.PI / 2, 0, 2.82]}>
+      <group position={[-0.35, -0.11, 0.08]} rotation={[Math.PI / 2, 0, 2.82]}>
         <mesh
           castShadow
           receiveShadow
@@ -104,4 +104,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/3D BODEGAS VILLAELENA.gltf");
+useGLTF.preload("/4D BODEGAS VILLAELENA.gltf");
